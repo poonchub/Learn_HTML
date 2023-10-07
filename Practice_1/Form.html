@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">กลับหน้าหลัก</a>
+
+    <!-- form ใช้ในการสร้างแบบฟอร์ม -->
+    <!-- 
+        Tag
+        - <input>       สร้างช่องรับข้อความ
+            type
+            - text      ข้อความ
+            - number    ตัวเลข
+            - email     อีเมล์
+            - password  รหัสผ่าน
+            - date      วันที่
+            - tel       เบอร์โทร
+            - color     สี
+            - range     ช่วงตัวเลข
+            - radio     สร้างตัวเลือกที่เลือกได้อย่างเดียว ต้องกำหนด nam=" " ให้เหมือนกันเพื่อเป็นการจัดกลุ่ม
+            - checkbox  สร้างตัวเลือกที่เลือกได้หลายอย่าง
+            - file      แนบไฟล์
+            - url       แนบลิงค์
+            - submit    ปุ่มส่งข้อมูล
+            - reset     ปุ่มล้างข้อมูล
+
+        - <select>      แสดงตัวเลือกแบบ Drop-down
+        - <option>      สร้างตัวเลือก
+        - <button>      สร้างปุ่ม
+            type
+            - submit
+            - reset
+
+        - <label>       กำหนดป้ายชื่อให้ช่องรับข้อมูล
+        - <textarea>    สร้างช่องรับข้อความแบบหลายบรรทัด
+
+        Attibute
+        - type
+        - name
+        - placeholder   ข้อความภายในช่องกรอกข้อมูล
+        - required      บังคับให้กรอกข้อมูล
+        - readonly      ทำให้อ่านได้อย่างเดียว
+        - selected      กำหนดให้เป็นค่าเริ่มต้น
+        - value         แสดงค่าเริ่มต้น
+    -->
+
+    <h1 align="center">ระบบลงทะเบียน</h1>
+    <form action="" align="center">
+        <!-- ข้อความ -->
+        <div>
+            <label for="Name">ชื่อ</label>
+            <!-- ใช้ required บังคับให้กรอกข้อมูล -->
+            <input type="text" name="Name" placeholder="ป้อนชื่อ" required>
+        </div>
+        
+        <!-- ตัวเลข -->
+        <div>
+            <label for="Age">อายุ</label>
+            <input type="number" min="0" age="Age" value="" placeholder="ป้อนอายุ">
+        </div>
+
+        <!-- สร้างช่องรับข้อความแบบหลายบรรทัด -->
+        <div>
+            <label for="address">ที่อยู่</label>
+            <!-- ใช้ readonly ทำให้อ่านได้อย่างเดียว -->
+            <textarea name="Address" id="" cols="20" rows="3" readonly >Poonchub</textarea>
+        </div>
+
+        <!-- สร้างตัวเลือก Drop-down -->
+        <div>
+            <label for="">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <!-- กำหนดให้เป็นค่าเริ่มต้นโดยใช้ selected -->
+                <option value="ประถมศึกษา" selected >ประถมศึกษา</option>
+                <option value="มัธยมศึกษาตอนต้น">มัธยมศึกษาตอนต้น</option>
+                <option value="มัธยมศึกษาตอนปลาย">มัธยมศึกษาตอนปลาย</option>
+            </select>
+        </div>
+
+        <!-- สร้างตัวเลือกที่เลือกได้อย่างเดียว -->
+        <div>
+            <label for="sex">เพศ</label>
+            <input type="radio" name="sex">เพศชาย
+            <input type="radio" name="sex">เพศหญิง
+            <input type="radio" name="sex">ไม่ระบุ
+        </div>        
+
+        <!-- สร้างตัวเลือกที่เลือกได้หลายอย่าง -->
+        <div>
+            <label for="fav">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="fav">เล่นเกม
+            <input type="checkbox" name="fav">เล่นกีฬา
+            <input type="checkbox" name="fav">เล่นดนตรี
+        </div>
+
+        <!-- ปุ่มส่งข้อมูล -->
+        <div>
+            <input type="submit" value="บันทึกข้อมูล">
+            <input type="reset" value="ล้างข้อมูล">
+        </div>
+    </form>
+</body>
+</html>

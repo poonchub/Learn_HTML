@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Computer language</h1>
+    <a href="index.html">กลับหน้าหลัก</a>
+
+    <!-- การสร้างตาราง -->
+    <!-- 
+        Attribute
+        - border=" "    เส้นขอบและความหนา
+        - width=" %"    ความกว้าง
+        - bgcolor=" "   สีพื้นหลังตาราง
+            - <table bgcolor=" ">   สีแถวและคอลัมน์
+            - <tr bgcolor=" ">      สีแถว
+            - <td bgcolor=" ">      สีคอลัมน์
+        - colspan="x"   รวมคอลัมน์ x คือ จำนวนคอลัมน์ (ช่อง <td>) 
+        - rowspan="x"   รวมแถว x คือ จำนวนคอลัมน์ (ช่อง <tr>)
+        - align=" "     จัดตำแหน่งในช่องตาราง (left,center,right)
+        - Cellpadding=" "   เพิ่มขนาดตาราง ค่าเริ่มต้น 0
+        - Cellspacing=" "   เพิ่มขนาดเส้นขอบ ค่าเริ่มต้น 0
+
+     -->
+    <table border="1" width="50%" Cellpadding="10" Cellspacing="5" align="center">
+        <!-- ส่วนหัว -->
+        <thead>
+            <th>language</th>
+            <th>Details</th>
+        </thead>
+
+        <!-- ส่วนตัว -->
+        <tbody>
+            <!-- row -->
+            <tr bgcolor="yellow">
+                <!-- column -->
+                <td>Python</td>
+                <td align="center">
+                    <a href="https://github.com/poonchub/Learn_Python">Github Link</a>
+                </td>
+            </tr>
+
+            <tr bgcolor="pink">
+                <td>C</td>
+                <td align="center">
+                    <a href="https://github.com/poonchub/Learn_C">Github Link</a>
+                </td>
+            </tr>
+        </tbody>
+
+        <!-- ส่วนเท้า -->
+        <tfoot align="right">
+            <td colspan="2">
+                <a href="#">Support</a>
+            </td>
+        </tfoot>
+    </table>
+</body>
+</html>
